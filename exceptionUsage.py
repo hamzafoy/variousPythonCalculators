@@ -12,11 +12,20 @@ digit_map = {
 }
 
 def convert(string):
-    number = ''
-    words = string.split()
-    for word in words:
-        number += digit_map[word]
-    integer = int(number)
-    return integer
+    try:
+        integer = -1
+        number = ''
+        words = string.split()
+        for word in words:
+            number += digit_map[word]
+        integer = int(number)
+    except (KeyError, TypeError, AttributeError):
+        print("Conversion failed")
+    if integer != -1:
+        return integer
+    else:
+        pass
 
-print(convert("one zero three six"))
+print(convert("one zero threety six"))
+print(convert(512))
+print(convert("one zero two eight seven two"))
