@@ -4,4 +4,4 @@ def calculateRectangularArea(length, width):
         "metric": (length * width) / 10.764
     }
 
-print(calculateRectangularArea(15, 20))
+print(calculateRectangularArea(int(input()), int(input())))
