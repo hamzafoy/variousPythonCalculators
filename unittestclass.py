@@ -7,4 +7,4 @@ class Phonebook:
         self.numbers[name] = number
 
     def lookup(self, name):
-        return self.numbers
+        return self.numbers[name]

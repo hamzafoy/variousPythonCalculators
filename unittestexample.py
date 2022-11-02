@@ -7,4 +7,6 @@ class PhoneBookTest(unittest.TestCase):
         phonebook = Phonebook()
         phonebook.add("Hamza", "5029308392")
         number = phonebook.lookup("Hamza")
-        self.assertEqual("5029308391", number)
+        self.assertEqual("5029308392", number)
+
+unittest.main()
